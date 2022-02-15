@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -21,8 +21,13 @@ body {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #000;
+    transition: .3s ease;
+
+    &:hover {
+        color: $main-theme;
+    }
 }
 
 input {
@@ -37,8 +42,30 @@ table {
     overflow: hidden;
 }
 
-.container {
+section {
+    &.dark {
+        filter: brightness(.5);
+        z-index: 10;
+    }
+}
+
+[class*="__container"] {
     max-width: 1470px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 15;
+    display: none;
+
+    &.active {
+        display: block;
+    }
 }

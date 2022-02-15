@@ -1,3 +1,201 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 115px;
+    background: $white ;
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+    color: $black;
+    z-index: 20;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 15px;
+        position: relative;
+    }
+
+    &__sections {
+        display: flex;
+        font-size: 20px;
+
+        .section-title {
+            &.active {
+                color: $main-theme;
+
+                span {
+                    background: url(../images/arrow-active.png) no-repeat 50%;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+
+        li {
+            font-weight: 500;
+            cursor: pointer;
+            transition: .3s ease;
+
+            span {
+                display: inline-block;
+                width: 9px;
+                height: 4px;
+                vertical-align: top;
+                background: url(../images/arrow.png) no-repeat 50%;
+                background-size: 100% 100%;
+                margin: 12px 0 0 10px;
+            }
+
+            & + li {
+                padding-left: 90px;
+            }
+
+            &:hover {
+                color: $main-theme;
+
+                span {
+                    background: url(../images/arrow-active.png) no-repeat 50%;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        top: 90px;
+        background: $white;
+        height: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: .8s ease;
+        z-index: 19;
+
+        &-tabs {
+            width: 12%;
+            margin: 135px 250px 263px 215px;
+            font-weight: 500;
+            font-size: 20px;
+
+            ul {
+
+                li {
+
+                    & + li {
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            .tabs {
+                
+                &__button {
+                    cursor: pointer;
+                    transition: .3s ease;
+                    position: relative;
+
+                    &:before {
+                        display: none;
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        left: -25px;
+                        width: 14px;
+                        height: 14px;
+                        background: $main-theme;
+                        border-radius: 50px;
+                    }
+
+                    &.active {
+                        color: $main-theme;
+
+                        &:before {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &-content {
+
+                margin: 188px 250px 188px  60px;
+                width: 88%;
+    
+                .tabs {
+
+                    &__item {
+                        display: none;
+
+                        &-flexbox {
+                            display: flex;
+                        }
+
+                        &-image {
+                            flex-shrink: 0;
+                            margin-right: 60px;
+                        }
+    
+                        &-title {
+                            text-transform: uppercase;
+                            font-size: 22px;
+                            font-weight: 700;
+                            margin-bottom: 30px;
+                        }
+    
+                        &-text {
+                            font-weight: 500;
+                            font-size: 18px;
+    
+                            p + p {
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }        
+            }
+        }
+
+        &-tabs,
+        &-tabs-content {
+            display: none;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            width: 0;
+            height: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            z-index: 20;
+            margin-top: 25px;
+            transition: .5s ease;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 30%;
+            width: 1px;
+            height: 0;
+            border-right: 1px solid rgba(0, 0, 0, .2);
+            z-index: 20;
+            transition: .5s ease;
+        }
+
+        &.active {
+            height: 740px;
+
+            &:before {
+                width: 80%;
+            }
+            
+            &:after {
+                height: 80%;
+            }
+        }
+    }
 }

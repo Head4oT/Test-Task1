@@ -4,17 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Test Task 1</title>
 </head>
 <body>
     <div class="wrapper">
-        <section id="portfolio" class="portfolio">
-            <header class="header">
-                <div class="container">
-                    <img src="./images/logo.png" alt="">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#"><img src="./images/logo.png" alt="logo"></a>
                 </div>
-            </header>
-        </section>
+                <ul class="header__sections">
+                    <li class="section-title">Section 1<span></span></li>
+                    <li><a href="#">Section 2</a></li>
+                    <li><a href="#">Section 3</a></li>
+                </ul>
+            </div>
+            <div class="header__menu">
+                <div class="header__menu-tabs">
+                    <ul class="tabs__buttons">
+                        <li class="tabs__button">Section 1</li>
+                        <li class="tabs__button">Section 2</li>
+                        <li class="tabs__button">Section 3</li>
+                        <li class="tabs__button">Section 4</li>
+                        <li class="tabs__button">Section 5</li>
+                        <li class="tabs__button">Section 6</li>
+                    </ul>
+                </div>
+                <div class="header__menu-tabs-content">
+                    <div class="tabs__item">
+                        <div class="tabs__item-flexbox">
+                            <div class="tabs__item-image">
+                                <img src="./images/subSection1.png" alt="Dry eye treatments">
+                            </div>
+                            <div class="tabs__item-text">
+                                <h4 class="tabs__item-title">dry eye treatments</h4>
+                                <p>Nunc senectus platea efficitur tellus dapibus vestibulum aenean, facilisi vivamus id semper porta scelerisque nam sodales, blandit aliquet erat pulvinar cursus augue. Accumsan cursus imperdiet venenatis ornare pulvinar libero sapien.</p>
+                                <p>lorem pulvinar torquent morbi ultricies euismod magnis parturient, odio sociosqu dis nullam nisl vitae eget interdum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__item-flexbox">
+                            <div class="tabs__item-image">
+                                <img src="./images/subSection1.png" alt="Dry eye treatments">
+                            </div>
+                            <div class="tabs__item-text">
+                                <h4 class="tabs__item-title">section 2</h4>
+                                <p>Nunc senectus platea efficitur tellus dapibus vestibulum aenean, facilisi vivamus id semper porta scelerisque nam sodales, blandit aliquet erat pulvinar cursus augue. Accumsan cursus imperdiet venenatis ornare pulvinar libero sapien.</p>
+                                <p>lorem pulvinar torquent morbi ultricies euismod magnis parturient, odio sociosqu dis nullam nisl vitae eget interdum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__item-flexbox">
+                            <div class="tabs__item-image">
+                                <img src="./images/subSection1.png" alt="Dry eye treatments">
+                            </div>
+                            <div class="tabs__item-text">
+                                <h4 class="tabs__item-title">section 3</h4>
+                                <p>Nunc senectus platea efficitur tellus dapibus vestibulum aenean, facilisi vivamus id semper porta scelerisque nam sodales, blandit aliquet erat pulvinar cursus augue. Accumsan cursus imperdiet venenatis ornare pulvinar libero sapien.</p>
+                                <p>lorem pulvinar torquent morbi ultricies euismod magnis parturient, odio sociosqu dis nullam nisl vitae eget interdum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__item-flexbox">
+                            <div class="tabs__item-image">
+                                <img src="./images/subSection1.png" alt="Dry eye treatments">
+                            </div>
+                            <div class="tabs__item-text">
+                                <h4 class="tabs__item-title">section 4</h4>
+                                <p>Nunc senectus platea efficitur tellus dapibus vestibulum aenean, facilisi vivamus id semper porta scelerisque nam sodales, blandit aliquet erat pulvinar cursus augue. Accumsan cursus imperdiet venenatis ornare pulvinar libero sapien.</p>
+                                <p>lorem pulvinar torquent morbi ultricies euismod magnis parturient, odio sociosqu dis nullam nisl vitae eget interdum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__item-flexbox">
+                            <div class="tabs__item-image">
+                                <img src="./images/subSection1.png" alt="Dry eye treatments">
+                            </div>
+                            <div class="tabs__item-text">
+                                <h4 class="tabs__item-title">section 5</h4>
+                                <p>Nunc senectus platea efficitur tellus dapibus vestibulum aenean, facilisi vivamus id semper porta scelerisque nam sodales, blandit aliquet erat pulvinar cursus augue. Accumsan cursus imperdiet venenatis ornare pulvinar libero sapien.</p>
+                                <p>lorem pulvinar torquent morbi ultricies euismod magnis parturient, odio sociosqu dis nullam nisl vitae eget interdum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__item-flexbox">
+                            <div class="tabs__item-image">
+                                <img src="./images/subSection1.png" alt="Dry eye treatments">
+                            </div>
+                            <div class="tabs__item-text">
+                                <h4 class="tabs__item-title">section 6</h4>
+                                <p>Nunc senectus platea efficitur tellus dapibus vestibulum aenean, facilisi vivamus id semper porta scelerisque nam sodales, blandit aliquet erat pulvinar cursus augue. Accumsan cursus imperdiet venenatis ornare pulvinar libero sapien.</p>
+                                <p>lorem pulvinar torquent morbi ultricies euismod magnis parturient, odio sociosqu dis nullam nisl vitae eget interdum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="overlay"></div>
+            <section id="portfolio" class="portfolio">
+                <div class="portfolio__swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </section>
+        </main>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
