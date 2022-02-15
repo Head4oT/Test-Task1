@@ -185,5 +185,13 @@ section.dark {
   background: #FB8374;
   padding-top: 115px; }
 
+.company {
+  background: #FFABA0;
+  padding: 130px 15px; }
+  .company__title {
+    font-size: 36px;
+    text-align: center;
+    padding: 0 0 60px; }
+
 
 /*# sourceMappingURL=style.css.map*/
