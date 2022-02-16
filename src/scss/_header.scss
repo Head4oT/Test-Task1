@@ -120,6 +120,7 @@
         @include screen(800px) {
             flex-direction: column;
             top: 135px;
+            transition: .3s ease;
         }
 
         &.active {
