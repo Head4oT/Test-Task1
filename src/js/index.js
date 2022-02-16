@@ -22,21 +22,6 @@ $(document).ready(function() {
     }).eq(0).addClass("active");
     $(".tabs__item").eq(0).fadeIn();
 
-    //Portfolio swiper
-    const portfolio__swiper = new Swiper('.portfolio__swiper', {
-        loop: true,
-        // autoplay: {
-        //     delay: 5000,
-        // },
-        slidesPerView: 1,
-        spaceBetween: 30,
-        autoHeight: 'true',
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    })
-
     //Company swipers
     const company__swiper1 = new Swiper('.company__swiper-first', {
         loop: true,
