@@ -3,8 +3,11 @@ import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 Swiper.use([ Autoplay, Navigation, Pagination]);
 
 $(document).ready(function() {
+
     $('.section-title').on('click', function() {
         $('.header__menu').toggleClass('active');
+        $('.header__container').toggleClass('active');
+        $('.header__menu-tabs').toggleClass('active');
         $('.section-title').toggleClass('active');
         $('.overlay').toggleClass('active');
         $('.header__menu-tabs').fadeToggle();
