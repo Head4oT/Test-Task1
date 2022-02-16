@@ -142,7 +142,8 @@ section.dark {
     @media (max-width: 800px) {
       .header__menu {
         flex-direction: column;
-        top: 135px; } }
+        top: 135px;
+        transition: .3s ease; } }
     .header__menu.active {
       height: 740px; }
     .header__menu-tabs {
